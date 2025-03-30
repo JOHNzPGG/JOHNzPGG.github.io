@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="pytania.html">Pytania</a>
+            <span onclick='changeDifficultyLevel()' class="difficulty-level-button">Aktualny poziom trudności: <span id="difficulty">Normalny</span></span>
+        </nav>
+        <div class="points">Punkty: 0</div>
+    </header>
+    <div class="content">
+        <div>
+        </br></br></br></br></br>
+            <h1>Kategoria gry</h1>
+        </br>
+            <h1>Koło Nagród</h1>
+            <div class="wheel-container" onclick="spin()">
+                <div class="arrow"></div>
+                <div class="wheel"></div>
+            </div>
+            <h1>Pytanie</h1>
+            <div class="pytania-odpowiedzi">
+                <span id="question"></span>
+            </div>
+            <h1>Odpowiedzi</h1>
+            <div class="pytania-odpowiedzi>">
+                <span id="answers"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="gry-script.js"></script>
+</script>
+</html>

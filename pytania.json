@@ -1,0 +1,148 @@
+{
+    "pytania": [
+      {
+        "id": 1,
+        "kategoria": "gry",
+        "difficulty": "łatwy",
+        "pytanie": "Jak nazywa się główny bohater gry 'Wiedźmin 3: Dziki Gon'?",
+        "odpowiedzi": [
+          {"tekst": "Geralt z Rivii", "poprawna": true},
+          {"tekst": "Lambert", "poprawna": false},
+          {"tekst": "Eskel", "poprawna": false},
+          {"tekst": "Vesemir", "poprawna": false}
+        ]
+      },
+      {
+        "id": 2,
+        "kategoria": "gry",
+        "difficulty": "łatwy",
+        "pytanie": "W jakim mieście rozpoczyna się akcja gry 'Cyberpunk 2077'?",
+        "odpowiedzi": [
+          {"tekst": "Night City", "poprawna": true},
+          {"tekst": "Los Santos", "poprawna": false},
+          {"tekst": "Novigrad", "poprawna": false},
+          {"tekst": "Rapture", "poprawna": false}
+        ]
+      },
+      {
+        "id": 3,
+        "kategoria": "gry",
+        "difficulty": "łatwy",
+        "pytanie": "Która z poniższych postaci NIE jest członkiem drużyny w grze 'Mass Effect'?",
+        "odpowiedzi": [
+          {"tekst": "Garrus Vakarian", "poprawna": false},
+          {"tekst": "Tali'Zorah", "poprawna": false},
+          {"tekst": "Master Chief", "poprawna": true},
+          {"tekst": "Liara T'Soni", "poprawna": false}
+        ]
+      },
+      {
+        "id": 4,
+        "kategoria": "gry",
+        "difficulty": "normalny",
+        "pytanie": "Jak nazywa się miasto, w którym toczy się akcja gry 'BioShock'?",
+        "odpowiedzi": [
+          {"tekst": "Rapture", "poprawna": true},
+          {"tekst": "Columbia", "poprawna": false},
+          {"tekst": "Midgar", "poprawna": false},
+          {"tekst": "Arkham", "poprawna": false}
+        ]
+      },
+      {
+        "id": 5,
+        "kategoria": "gry",
+        "difficulty": "normalny",
+        "pytanie": "Która firma jest odpowiedzialna za stworzenie gry 'The Elder Scrolls V: Skyrim'?",
+        "odpowiedzi": [
+          {"tekst": "Bethesda Game Studios", "poprawna": true},
+          {"tekst": "CD Projekt Red", "poprawna": false},
+          {"tekst": "BioWare", "poprawna": false},
+          {"tekst": "Ubisoft", "poprawna": false}
+        ]
+      },
+      {
+        "id": 6,
+        "kategoria": "gry",
+        "difficulty": "normalny",
+        "pytanie": "W grze 'Dark Souls', co oznacza status 'Hollow'?",
+        "odpowiedzi": [
+          {"tekst": "Gracz stracił człowieczeństwo", "poprawna": true},
+          {"tekst": "Gracz zdobył dodatkowe moce", "poprawna": false},
+          {"tekst": "Gracz jest odporny na ogień", "poprawna": false},
+          {"tekst": "Gracz nie może używać magii", "poprawna": false}
+        ]
+      },
+      {
+        "id": 7,
+        "kategoria": "gry",
+        "difficulty": "trudny",
+        "pytanie": "W serii 'Metal Gear Solid', kim jest 'The Boss'?",
+        "odpowiedzi": [
+          {"tekst": "Mentorką Naked Snake'a", "poprawna": true},
+          {"tekst": "Głównym antagonistą", "poprawna": false},
+          {"tekst": "Siostrą Solid Snake'a", "poprawna": false},
+          {"tekst": "Liderką organizacji FOXHOUND", "poprawna": false}
+        ]
+      },
+      {
+        "id": 8,
+        "kategoria": "gry",
+        "difficulty": "trudny",
+        "pytanie": "Jak nazywa się planeta, na której toczy się akcja gry 'Chrono Trigger'?",
+        "odpowiedzi": [
+          {"tekst": "Ziemia", "poprawna": false},
+          {"tekst": "Gaia", "poprawna": false},
+          {"tekst": "Lavos", "poprawna": false},
+          {"tekst": "Nie jest nazwane w grze", "poprawna": true}
+        ]
+      },
+      {
+        "id": 9,
+        "kategoria": "gry",
+        "difficulty": "trudny",
+        "pytanie": "W grze 'Planescape: Torment', jakie jest główne pytanie, na które stara się odpowiedzieć Bezimienny?",
+        "odpowiedzi": [
+          {"tekst": "Co może zmienić naturę człowieka?", "poprawna": true},
+          {"tekst": "Jak odzyskać swoje wspomnienia?", "poprawna": false},
+          {"tekst": "Kim jest prawdziwy Bóg?", "poprawna": false},
+          {"tekst": "Jak pokonać nieśmiertelność?", "poprawna": false}
+        ]
+      },
+      {
+        "id": 10,
+        "kategoria": "filmy",
+        "difficulty": "łatwy",
+        "pytanie": "Kto jest reżyserem trylogii 'Władca Pierścieni'?",
+        "odpowiedzi": [
+          {"tekst": "Peter Jackson", "poprawna": true},
+          {"tekst": "Steven Spielberg", "poprawna": false},
+          {"tekst": "Christopher Nolan", "poprawna": false},
+          {"tekst": "James Cameron", "poprawna": false}
+        ]
+      },
+      {
+        "id": 11,
+        "kategoria": "filmy",
+        "difficulty": "normalny",
+        "pytanie": "Jak nazywa się szkoła magii w serii filmów 'Harry Potter'?",
+        "odpowiedzi": [
+          {"tekst": "Hogwart", "poprawna": true},
+          {"tekst": "Durmstrang", "poprawna": false},
+          {"tekst": "Beauxbatons", "poprawna": false},
+          {"tekst": "Ilvermorny", "poprawna": false}
+        ]
+      },
+      {
+        "id": 12,
+        "kategoria": "filmy",
+        "difficulty": "trudny",
+        "pytanie": "Jak nazywa się zaklęcie które potrafi zabić w serii filmów 'Harry Potter'?",
+        "odpowiedzi": [
+          {"tekst": "Avada Kedavra", "poprawna": true},
+          {"tekst": "???", "poprawna": false},
+          {"tekst": "???", "poprawna": false},
+          {"tekst": "???", "poprawna": false}
+        ]
+      }
+    ]
+  }

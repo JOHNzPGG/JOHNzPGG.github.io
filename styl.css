@@ -3,6 +3,7 @@ body {
     background-color: #282c34;
     font-family: Arial, sans-serif;
     color: #fff;
+    height: 100vh;
 }
 
 header {
@@ -32,7 +33,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(50vh - 60px);
+    height: calc(70vh - 60px);
 }
 
 .wheel-container {
@@ -124,6 +125,11 @@ h1 {
 .difficulty-level-button{
     font-size: large;
     cursor: pointer;
+}
+
+.pytania-odpowiedzi{
+    height: 5vh;
+    text-align: center;
 }
 
 @keyframes spin {

@@ -1,0 +1,1 @@
+let difficulty_storage = localStorage.getItem("difficulty");
