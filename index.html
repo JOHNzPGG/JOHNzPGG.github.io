@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="pytania.html">Pytania</a>
+            <span onclick='changeDifficultyLevel()' class="difficulty-level-button">Aktualny poziom trudności: <span id="difficulty"></span></span>
+        </nav>
+        <div class="points">Punkty: 0</div>
+    </header>
+    <div class="category-container">
+        <h2>Wybierz kategorię:</h2>
+        <div class="content">
+            <a href="kolo.html" class="linki">
+                <div class="kategoria gry">
+                    GRY
+                </div>
+            </a>
+            <a href="kolo.html" class="linki">
+                <div class="kategoria filmy">
+                    FILMY
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
