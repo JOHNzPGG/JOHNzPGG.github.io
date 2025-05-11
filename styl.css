@@ -75,7 +75,12 @@ h1 {
     text-align: center;
 }
 
+.main-text{
+    animation: float 5s ease-in-out infinite;
+}
+
 .kategoria{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 60px;
     width: 100px;
     margin-left: 200px;
@@ -85,9 +90,19 @@ h1 {
     border-radius: 2rem;
 }
 
+.kategoria:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    background-color: #444;
+}
+
 .gry{
     background-color: red;
     padding: 50px 20px 20px 20px;
+}
+
+.gry:hover{
+    animation: overflow_red 3s ease-in-out infinite;
 }
 
 .filmy{
@@ -95,14 +110,23 @@ h1 {
     padding: 50px 20px 20px 20px;
 }
 
+.filmy:hover{
+    animation: overflow_blue 3s ease-in-out infinite;
+}
+
 .linki{
     text-decoration: none;
     color: white;
 }
 
+.nav:hover{
+    transition: 0.3s;
+    color: red;
+}
+
 .category-container{
     font-size: larger;
-    padding-top: 20vh;
+    padding-top: 10vh;
     text-align: center;
 }
 
@@ -127,6 +151,12 @@ h1 {
     cursor: pointer;
 }
 
+.reset-button{
+    font-size: large;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
 .pytania-odpowiedzi{
     height: 5vh;
     text-align: center;
@@ -136,11 +166,56 @@ h1 {
     transition: transform 4s ease-out;
 }
 
+.question {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes overflow_red {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: darkred;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+
+@keyframes overflow_blue {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: darkblue;
+    }
+    100%{
+        background-color: blue;
     }
 }
