@@ -132,6 +132,10 @@ h1 {
     text-align: center;
 }
 
+.wheel {
+    transition: transform 4s ease-out;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);

@@ -13,6 +13,7 @@
             <a href="index.html">Strona główna</a>
             <a href="pytania.html">Pytania</a>
             <span onclick='changeDifficultyLevel()' class="difficulty-level-button">Aktualny poziom trudności: <span id="difficulty">Normalny</span></span>
+            <button onclick="resetQuiz()">Zresetuj grę</button>
         </nav>
         <div class="points">Punkty: 0</div>
     </header>
@@ -31,7 +32,7 @@
                 <span id="question"></span>
             </div>
             <h1>Odpowiedzi</h1>
-            <div class="pytania-odpowiedzi>">
+            <div class="pytania-odpowiedzi">
                 <span id="answers"></span>
             </div>
         </div>
@@ -39,5 +40,4 @@
 </body>
 <script src="script.js"></script>
 <script src="gry-script.js"></script>
-</script>
 </html>

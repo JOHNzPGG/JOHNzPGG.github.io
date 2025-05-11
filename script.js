@@ -11,17 +11,21 @@ function sleep(ms) {
 }
 
 function changeDifficultyLevel(){
-    if(localStorage.getItem("difficulty") == "łatwy"){
-        difficulty_item.innerText = "normalny";
-        localStorage.setItem("difficulty", "normalny");
+    if(localStorage.getItem("difficulty") == "Łatwy"){
+        difficulty_item.innerText = "Normalny";
+        localStorage.setItem("difficulty", "Normalny");
     }
-    else if(localStorage.getItem("difficulty") == "normalny"){
-        difficulty_item.innerText = "trudny";
-        localStorage.setItem("difficulty", "trudny");
+    else if(localStorage.getItem("difficulty") == "Normalny"){
+        difficulty_item.innerText = "Trudny";
+        localStorage.setItem("difficulty", "Trudny");
     }
-    else if(localStorage.getItem("difficulty") == "trudny"){
-        difficulty_item.innerText = "łatwy";
-        localStorage.setItem("difficulty", "łatwy");
+    else if(localStorage.getItem("difficulty") == "Trudny"){
+        difficulty_item.innerText = "Łatwy";
+        localStorage.setItem("difficulty", "Łatwy");
+    }
+    else{
+        difficulty_item.innerText = "Łatwy";
+        localStorage.setItem("difficulty", "Łatwy");
     }
     console.log(localStorage.getItem("difficulty"));
 }
