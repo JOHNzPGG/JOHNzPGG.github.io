@@ -1,5 +1,5 @@
 if(localStorage.getItem("difficulty") == null){
-    localStorage.setItem("difficulty", "normalny");
+    localStorage.setItem("difficulty", "Normalny");
 }
 
 let difficulty_item = document.getElementById("difficulty");

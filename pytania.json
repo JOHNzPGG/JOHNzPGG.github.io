@@ -152,7 +152,20 @@
         {"tekst": "Avada Kedavra", "poprawna": true},
         {"tekst": "Lumos", "poprawna": false},
         {"tekst": "Aguamenti Maxima", "poprawna": false},
-        {"tekst": "Accio?", "poprawna": false}
+        {"tekst": "Accio", "poprawna": false}
+      ],
+      "podpowiedz": "Zaklęcie to jest jednym z 'Niewybaczalnych' czarów."
+    },
+    {
+      "id": 13,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak skonczył główny bohater filmu Gladiator?",
+      "odpowiedzi": [
+        {"tekst": "Zginł", "poprawna": true},
+        {"tekst": "Znalazł miecz Króla Artura", "poprawna": false},
+        {"tekst": "Wycofał się na farmę", "poprawna": false},
+        {"tekst": "Został personalnym doradcą Attyli", "poprawna": false}
       ],
       "podpowiedz": "Zaklęcie to jest jednym z 'Niewybaczalnych' czarów."
     }
