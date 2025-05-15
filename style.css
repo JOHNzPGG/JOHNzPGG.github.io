@@ -30,6 +30,10 @@ nav a {
 }
 
 .content {
+    height: calc(100vh - 60px);
+}
+
+.content-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,12 +41,13 @@ nav a {
 }
 
 .wheel-container {
-    position: relative;
+    margin: auto;
     width: 300px;
     height: 300px;
 }
 
 .wheel {
+    z-index: 10;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -58,8 +63,9 @@ nav a {
 
 .arrow {
     position: absolute;
-    top: -20px;
-    left: 52%;
+    right: 47.6%;
+    top: 23%;
+    z-index: -10;
     transform: translateX(-50%);
     width: 0;
     height: 0;
@@ -170,6 +176,91 @@ h1 {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     font-size: 18px;
+}
+
+#up{
+    float: left;
+    width: 100%;
+    height: 10vh;
+}
+
+#left{
+    float: left;
+    min-width: 150px;
+    width: 25%;
+    height: 90%;
+}
+
+#middle{
+    float: left;
+    min-width: 700px;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+}
+
+#right{
+    float: left;
+    min-width: 150px;
+    width: 12%;
+    padding-left: 90px;
+    padding-right: 90px;
+    height: 90%;
+}
+
+#blue{
+    background-color: blue;
+    height: 50px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 15px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.747);
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 2rem;
+}
+
+#yellow{
+    background-color: yellow;
+    height: 70px;
+    width: 95%;
+    margin-left: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.945);
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 2rem;
+}
+
+#green{
+    background-color: green;
+    height: 50px;
+    width: 95%;
+    margin-left: 15px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.747);
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 2rem;
+}
+
+#red{
+    background-color: red;
+    height: 70px;
+    width: 95%;
+    margin-left: 15px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.747);
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 2rem;
+}
+
+#bonus{
+    height: 100px;
+    width: 95%;
+    margin-left: 15px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.747);
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 2rem;
 }
 
 @keyframes spin {

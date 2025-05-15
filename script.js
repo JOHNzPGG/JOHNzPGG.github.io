@@ -62,7 +62,9 @@ function loadQuestions() {
             data.pytania.forEach((pytanie, index) => {
                 let questionElement = document.createElement("div");
                 questionElement.className = "question";
-                questionElement.innerHTML = `<strong>Pytanie ${index + 1}:</strong> ${pytanie.pytanie}`;
+                // questionElement.innerHTML = `<strong>Pytanie ${index + 1}:</strong> ${pytanie.pytanie}`;
+
+                questionElement.innerHTML = `<strong>Pytanie ${index + 1}, Kategoria: ${pytanie.kategoria}, Poziom: ${pytanie.difficulty}</br></br></strong> Ukryte pytanie`;
                 container.appendChild(questionElement);
             });
         })

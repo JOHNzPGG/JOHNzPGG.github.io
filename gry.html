@@ -18,26 +18,37 @@
         <div class="points">Punkty: 0</div>
     </header>
     <div class="content">
-        <div>
-        </br></br></br></br></br>
+        <div id="up">
+            </br>
             <h1>Kategoria: gry</h1>
-            <!-- <span>
-                Możliwe bonusy:
-                <br>
-                niebieski - podpowiedź
-                <br>
-                żółty - brak bonusu
-                <br>
-                zielony - punkty x2
-                <br>
-                czerwony - ujemne punkty w przypadku złej odpowiedzi
-            </span> -->
-
-        </br>
+        </div>
+        <div id="left">
+            <div id="blue">
+                Gracz dostaje podpowiedź dotyczącą pytania.
+            </div>
+            <br><br>
+            <div id="yellow">
+                Koło ratunkowe 50/50 - wyrzucone zostają dwie niepoprawne odpowiedzi.
+            </div>
+            <br><br>
+            <div id="green">
+                Punkty x2 po udzieleniu poprawnej odpowiedzi.
+            </div>
+            <br><br>
+            <div id="red">
+                Gracz dostaje -5 pkt w przypadku udzielenia niepoprawnej odpowiedzi.
+            </div>
+            <br><br>
+            <div id="bonus">
+                Zakręć kołem by wylosować bonus!
+            </div>
+        </div>
+        <div id="middle">
+            </br>
             <h1>Koło Nagród</h1>
             <div class="wheel-container" onclick="spin()">
                 <div class="arrow"></div>
-                <div class="wheel"></div>
+                <div class="wheel" id="wheel"></div>
             </div>
             <h1>Pytanie</h1>
             <div class="pytania-odpowiedzi">
@@ -47,6 +58,9 @@
             <div class="pytania-odpowiedzi">
                 <span id="answers"></span>
             </div>
+        </div>
+        <div id="right">
+            
         </div>
     </div>
 </body>

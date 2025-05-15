@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pointsDisplay = document.querySelector(".points");
     let points = parseInt(localStorage.getItem("points") || "0");
     updatePointsDisplay();
+    let spinIdx = 0;
 
     function updatePointsDisplay() {
         pointsDisplay.textContent = `Punkty: ${points}`;
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return response.json();
             })
             .then(data => {
-                console.log(data.pytania)
+                console.log(data.pytania);
                 startQuiz(data.pytania);
             })
             .catch(error => console.error("Błąd:", error));
@@ -38,6 +39,30 @@ document.addEventListener("DOMContentLoaded", () => {
             q.difficulty === difficultyStorage &&
             !usedQuestions.includes(q.id)
         );
+
+        const questionsLights = document.getElementById("right");
+        questionsLights.innerHTML = "";
+        let id = 1;
+
+        availableQuestions.forEach((question) => {
+            const button = document.createElement("button");
+            button.innerText = `${id}`;
+            button.style.margin = "4px";
+            button.style.height = "60px";
+            button.style.width = "60px";
+            button.style.backgroundColor = "lightgrey";
+            button.style.borderRadius = "1rem";
+            button.style.fontSize = "25px";
+            id++;
+
+            // Dodaj np. podgląd pytania po kliknięciu
+            button.addEventListener("click", () => {
+                alert(`ID pytania:\n${question.id}`);
+            });
+
+            questionsLights.appendChild(button);
+        });
+
 
         if (availableQuestions.length === 0) {
             document.getElementById("question").innerText = "Brak więcej pytań!";
@@ -52,16 +77,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const questionElement = document.getElementById("question");
         const answersContainer = document.getElementById("answers");
         questionElement.innerText = question.pytanie;
+        questionElement.style.fontSize = "Larger";
         answersContainer.innerHTML = "";
 
         question.odpowiedzi.forEach((answer, index) => {
             const button = document.createElement("button");
             button.innerText = answer.tekst;
+            button.style.fontSize = "Larger";
+            button.style.backgroundColor = "lightgrey";
+            button.style.borderRadius = "1rem";
+            button.style.fontSize = "25px";
             button.onclick = () => checkAnswer(index, button);
             answersContainer.appendChild(button);
         });
 
-        // Obsługa 50/50
+        // 50/50
         if (rewardType === "yellow") {
             const wrongAnswers = question.odpowiedzi
                 .map((o, i) => ({ ...o, index: i }))
@@ -79,11 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("hint")
             const hint = question.podpowiedz;
             alert("PODPOWIEDŹ: " + hint);
-        }
-
-        // brak nagrody
-        if (rewardType === "yellow") {
-            alert("Niestety nic, spróbuj nastepnym razem.");
         }
     }
 
@@ -115,22 +140,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Funkcja losowania z koła
     window.spin = function () {
-        const wheel = document.querySelector(".wheel");
-        const randomDeg = 360 * 5 + Math.floor(Math.random() * 360); // minimum 5 obrotów
-        wheel.style.transition = "transform 4s ease-out";
-        wheel.style.transform = `rotate(${randomDeg}deg)`;
+        if(spinIdx === 1){
+            console.log("Już zakręciłeś kołem!");
+        }
+        else{
+            const wheel = document.querySelector(".wheel");
+            wheel.removeAttribute("onclick");
+            const randomDeg = Math.floor(Math.random() * 359);
+            const SpinAndranodmDeg = 360 * 5 + randomDeg; // minimum 5 obrotów
+            wheel.style.transition = "transform 4s ease-out";
+            wheel.style.transform = `rotate(${SpinAndranodmDeg}deg)`;
 
-        const normalizedDeg = randomDeg % 360;
+            setTimeout(() => {
+                if (randomDeg >= 0 && randomDeg < 90) rewardType = "blue";
+                else if (randomDeg >= 90 && randomDeg < 180) rewardType = "green";
+                else if (randomDeg >= 180 && randomDeg < 270) rewardType = "yellow";
+                else rewardType = "red";
 
-        setTimeout(() => {
-            if (normalizedDeg >= 0 && normalizedDeg < 90) rewardType = "red";
-            else if (normalizedDeg >= 90 && normalizedDeg < 180) rewardType = "yellow";
-            else if (normalizedDeg >= 180 && normalizedDeg < 270) rewardType = "green";
-            else rewardType = "blue";
+                console.log(randomDeg);
 
-            // Po zakończeniu animacji wyświetl pytanie
-            startQuizAfterSpin();
-        }, 4000);
+                // Po zakończeniu animacji wyświetl pytanie
+                startQuizAfterSpin();
+            }, 4000);
+            spinIdx = 1;
+        }
     };
 
     function startQuizAfterSpin() {
