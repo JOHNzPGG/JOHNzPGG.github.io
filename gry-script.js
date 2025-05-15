@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return response.json();
             })
             .then(data => {
+                console.log("Wszystkie pytania:");
                 console.log(data.pytania);
                 startQuiz(data.pytania);
             })
@@ -39,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             q.difficulty === difficultyStorage &&
             !usedQuestions.includes(q.id)
         );
-
+        console.log("Pytania z kategorii:");
+        console.log(availableQuestions);
         const questionsLights = document.getElementById("right");
         questionsLights.innerHTML = "";
         let id = 1;
