@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadQuestions() {
-        fetch("https://johnzpgg.github.io/pytania.json")
+        fetch("https://johnzpgg.github.io/pytania-nowe.json")
             .then(response => {
                 if (!response.ok) throw new Error(`Błąd wczytywania JSON: ${response.status}`);
                 return response.json();

@@ -1,0 +1,1049 @@
+{
+  "pytania": [
+    {
+      "id": 1,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się hydraulik będący maskotką Nintendo?",
+      "odpowiedzi": [
+        {"tekst": "Mario", "poprawna": true},
+        {"tekst": "Luigi", "poprawna": false},
+        {"tekst": "Bowser", "poprawna": false},
+        {"tekst": "Toad", "poprawna": false}
+      ],
+      "podpowiedz": "Ma charakterystyczny czerwony kapelusz z literą M."
+    },
+    {
+      "id": 2,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się postać, którą gracz steruje w grze 'The Legend of Zelda'?",
+      "odpowiedzi": [
+        {"tekst": "Link", "poprawna": true},
+        {"tekst": "Zelda", "poprawna": false},
+        {"tekst": "Ganon", "poprawna": false},
+        {"tekst": "Epona", "poprawna": false}
+      ],
+      "podpowiedz": "To młody wojownik często uzbrojony w miecz i tarczę."
+    },
+    {
+      "id": 3,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "W której grze pojawia się postać Creeper?",
+      "odpowiedzi": [
+        {"tekst": "Minecraft", "poprawna": true},
+        {"tekst": "Terraria", "poprawna": false},
+        {"tekst": "Fortnite", "poprawna": false},
+        {"tekst": "Roblox", "poprawna": false}
+      ],
+      "podpowiedz": "To gra typu sandbox z charakterystyczną grafiką voxelową."
+    },
+    {
+      "id": 4,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która z poniższych gier jest wyścigówką?",
+      "odpowiedzi": [
+        {"tekst": "Need for Speed", "poprawna": true},
+        {"tekst": "The Sims", "poprawna": false},
+        {"tekst": "Stardew Valley", "poprawna": false},
+        {"tekst": "Among Us", "poprawna": false}
+      ],
+      "podpowiedz": "W tej grze często uciekasz przed policją."
+    },
+    {
+      "id": 5,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się najbardziej znany tytuł Battle Royale od Epic Games?",
+      "odpowiedzi": [
+        {"tekst": "Fortnite", "poprawna": true},
+        {"tekst": "PUBG", "poprawna": false},
+        {"tekst": "Call of Duty: Warzone", "poprawna": false},
+        {"tekst": "Apex Legends", "poprawna": false}
+      ],
+      "podpowiedz": "Gra słynie z kolorowej grafiki i tańców postaci."
+    },
+    {
+      "id": 6,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jakiego koloru jest Sonic, główny bohater serii Sonic the Hedgehog?",
+      "odpowiedzi": [
+        {"tekst": "Niebieski", "poprawna": true},
+        {"tekst": "Zielony", "poprawna": false},
+        {"tekst": "Czerwony", "poprawna": false},
+        {"tekst": "Żółty", "poprawna": false}
+      ],
+      "podpowiedz": "To bardzo szybki niebieski jeż."
+    },
+    {
+      "id": 7,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która gra symuluje życie codzienne i pozwala budować domy?",
+      "odpowiedzi": [
+        {"tekst": "The Sims", "poprawna": true},
+        {"tekst": "Call of Duty", "poprawna": false},
+        {"tekst": "FIFA", "poprawna": false},
+        {"tekst": "Portal", "poprawna": false}
+      ],
+      "podpowiedz": "W tej grze możesz zbudować rodzinę i zaprojektować wnętrze mieszkania."
+    },
+    {
+      "id": 8,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jaką broń używa się w grze 'Portal'?",
+      "odpowiedzi": [
+        {"tekst": "Portal Gun", "poprawna": true},
+        {"tekst": "Snajperka", "poprawna": false},
+        {"tekst": "Miecz świetlny", "poprawna": false},
+        {"tekst": "Łuk", "poprawna": false}
+      ],
+      "podpowiedz": "Pozwala tworzyć przejścia między dwoma miejscami."
+    },
+    {
+      "id": 9,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jaka jest główna waluta w grze 'The Sims'?",
+      "odpowiedzi": [
+        {"tekst": "Simoleony", "poprawna": true},
+        {"tekst": "Dukaty", "poprawna": false},
+        {"tekst": "Złote monety", "poprawna": false},
+        {"tekst": "Kapsle", "poprawna": false}
+      ],
+      "podpowiedz": "Pieniądze w Simsach mają unikalną nazwę na literę 'S'."
+    },
+    {
+      "id": 10,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Kto jest głównym bohaterem serii 'Halo'?",
+      "odpowiedzi": [
+        {"tekst": "Master Chief", "poprawna": true},
+        {"tekst": "Marcus Fenix", "poprawna": false},
+        {"tekst": "Gordon Freeman", "poprawna": false},
+        {"tekst": "Doomguy", "poprawna": false}
+      ],
+      "podpowiedz": "To żołnierz w zielonym pancerzu."
+    },
+    {
+      "id": 21,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się włoski hydraulik z serii gier Nintendo?",
+      "odpowiedzi": [
+        {"tekst": "Mario", "poprawna": true},
+        {"tekst": "Luigi", "poprawna": false},
+        {"tekst": "Toad", "poprawna": false},
+        {"tekst": "Bowser", "poprawna": false}
+      ],
+      "podpowiedz": "Ma charakterystyczny czerwony strój i wąsy."
+    },
+    {
+      "id": 22,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "W jakiej grze pojawia się postać Creepera?",
+      "odpowiedzi": [
+        {"tekst": "Minecraft", "poprawna": true},
+        {"tekst": "Terraria", "poprawna": false},
+        {"tekst": "Fortnite", "poprawna": false},
+        {"tekst": "Roblox", "poprawna": false}
+      ],
+      "podpowiedz": "Gra ta opiera się na budowaniu z bloków i eksploracji."
+    },
+    {
+      "id": 23,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która z tych postaci NIE pochodzi z gry League of Legends?",
+      "odpowiedzi": [
+        {"tekst": "Tracer", "poprawna": true},
+        {"tekst": "Ahri", "poprawna": false},
+        {"tekst": "Lux", "poprawna": false},
+        {"tekst": "Jinx", "poprawna": false}
+      ],
+      "podpowiedz": "Tracer pochodzi z gry Blizzarda, nie z League of Legends."
+    },
+    {
+      "id": 24,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Jakie studio stworzyło grę 'The Witcher 3: Dziki Gon'?",
+      "odpowiedzi": [
+        {"tekst": "CD Projekt RED", "poprawna": true},
+        {"tekst": "Ubisoft", "poprawna": false},
+        {"tekst": "Bethesda", "poprawna": false},
+        {"tekst": "Rockstar Games", "poprawna": false}
+      ],
+      "podpowiedz": "To polskie studio z siedzibą w Warszawie."
+    },
+    {
+      "id": 25,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "W jakim uniwersum rozgrywa się gra 'Skyrim'?",
+      "odpowiedzi": [
+        {"tekst": "The Elder Scrolls", "poprawna": true},
+        {"tekst": "Dragon Age", "poprawna": false},
+        {"tekst": "Dark Souls", "poprawna": false},
+        {"tekst": "Gothic", "poprawna": false}
+      ],
+      "podpowiedz": "To uniwersum obejmuje także gry Morrowind i Oblivion."
+    },
+    {
+      "id": 26,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która gra została wydana jako ekskluzywna na konsolę Nintendo Switch?",
+      "odpowiedzi": [
+        {"tekst": "The Legend of Zelda: Breath of the Wild", "poprawna": true},
+        {"tekst": "The Last of Us", "poprawna": false},
+        {"tekst": "Halo Infinite", "poprawna": false},
+        {"tekst": "God of War", "poprawna": false}
+      ],
+      "podpowiedz": "To gra, w której Link eksploruje Hyrule."
+    },
+    {
+      "id": 27,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się wyspa, na której lądują gracze w Fortnite?",
+      "odpowiedzi": [
+        {"tekst": "Apollo", "poprawna": true},
+        {"tekst": "Skeld", "poprawna": false},
+        {"tekst": "Pandora", "poprawna": false},
+        {"tekst": "Isla Nublar", "poprawna": false}
+      ],
+      "podpowiedz": "Jej nazwa pochodzi od greckiego boga słońca."
+    },
+    {
+      "id": 28,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Która z tych postaci pojawia się w serii 'Metal Gear'?",
+      "odpowiedzi": [
+        {"tekst": "Solid Snake", "poprawna": true},
+        {"tekst": "Sam Fisher", "poprawna": false},
+        {"tekst": "Master Chief", "poprawna": false},
+        {"tekst": "Gordon Freeman", "poprawna": false}
+      ],
+      "podpowiedz": "Postać ta znana jest z opaski na oku i cichego działania."
+    },
+    {
+      "id": 29,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jakie imię nosi córka Joela w grze 'The Last of Us'?",
+      "odpowiedzi": [
+        {"tekst": "Sarah", "poprawna": true},
+        {"tekst": "Ellie", "poprawna": false},
+        {"tekst": "Anna", "poprawna": false},
+        {"tekst": "Tess", "poprawna": false}
+      ],
+      "podpowiedz": "To imię pada w prologu gry."
+    },
+    {
+      "id": 30,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Która gra jako pierwsza w historii użyła techniki ray tracingu w czasie rzeczywistym?",
+      "odpowiedzi": [
+        {"tekst": "Battlefield V", "poprawna": true},
+        {"tekst": "Cyberpunk 2077", "poprawna": false},
+        {"tekst": "Control", "poprawna": false},
+        {"tekst": "Crysis", "poprawna": false}
+      ],
+      "podpowiedz": "To strzelanka z serii DICE, która była jednym z pierwszych dem RTX Nvidii."
+    },
+    {
+      "id": 31,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "W której grze głównym bohaterem jest jeż o imieniu Sonic?",
+      "odpowiedzi": [
+        {"tekst": "Sonic the Hedgehog", "poprawna": true},
+        {"tekst": "Rayman", "poprawna": false},
+        {"tekst": "Crash Bandicoot", "poprawna": false},
+        {"tekst": "Spyro", "poprawna": false}
+      ],
+      "podpowiedz": "To szybki, niebieski jeż znany z gier SEGA."
+    },
+    {
+      "id": 32,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która gra pozwala budować farmę, hodować zwierzęta i uprawiać rośliny?",
+      "odpowiedzi": [
+        {"tekst": "Stardew Valley", "poprawna": true},
+        {"tekst": "DOOM", "poprawna": false},
+        {"tekst": "FIFA", "poprawna": false},
+        {"tekst": "Call of Duty", "poprawna": false}
+      ],
+      "podpowiedz": "Gra inspirowana klasycznym Harvest Moon."
+    },
+    {
+      "id": 33,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Jaką klasę postaci wybierasz w grze 'Diablo II', jeśli chcesz używać nekromancji?",
+      "odpowiedzi": [
+        {"tekst": "Nekromanta", "poprawna": true},
+        {"tekst": "Barbarzyńca", "poprawna": false},
+        {"tekst": "Paladyn", "poprawna": false},
+        {"tekst": "Czarodziejka", "poprawna": false}
+      ],
+      "podpowiedz": "Ta postać potrafi wskrzeszać szkielety i używać klątw."
+    },
+    {
+      "id": 34,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która gra wykorzystuje system „Nemesis” do tworzenia unikalnych przeciwników?",
+      "odpowiedzi": [
+        {"tekst": "Shadow of Mordor", "poprawna": true},
+        {"tekst": "The Witcher 3", "poprawna": false},
+        {"tekst": "Assassin’s Creed: Odyssey", "poprawna": false},
+        {"tekst": "Dark Souls III", "poprawna": false}
+      ],
+      "podpowiedz": "Gra osadzona w uniwersum Władcy Pierścieni."
+    },
+    {
+      "id": 35,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "W jakiej grze spotkamy postać GLaDOS?",
+      "odpowiedzi": [
+        {"tekst": "Portal", "poprawna": true},
+        {"tekst": "Half-Life", "poprawna": false},
+        {"tekst": "Bioshock", "poprawna": false},
+        {"tekst": "Deus Ex", "poprawna": false}
+      ],
+      "podpowiedz": "Gra logiczna z portalami i testami w laboratorium."
+    },
+    {
+      "id": 36,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Który bohater gry Overwatch nosi maskę i walczy przy pomocy strzelby?",
+      "odpowiedzi": [
+        {"tekst": "Reaper", "poprawna": true},
+        {"tekst": "Tracer", "poprawna": false},
+        {"tekst": "Winston", "poprawna": false},
+        {"tekst": "Hanzo", "poprawna": false}
+      ],
+      "podpowiedz": "Postać z ciemnym płaszczem i zdolnością teleportacji."
+    },
+    {
+      "id": 37,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Która gra jako pierwsza wprowadziła tryb battle royale na dużą skalę?",
+      "odpowiedzi": [
+        {"tekst": "PUBG", "poprawna": true},
+        {"tekst": "Fortnite", "poprawna": false},
+        {"tekst": "Apex Legends", "poprawna": false},
+        {"tekst": "Call of Duty: Warzone", "poprawna": false}
+      ],
+      "podpowiedz": "Gra znana z realistycznego podejścia i rozpoczęcia trendu battle royale."
+    },
+    {
+      "id": 38,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "W jakiej grze gracze eksplorują opustoszałe miasto Rapture?",
+      "odpowiedzi": [
+        {"tekst": "Bioshock", "poprawna": true},
+        {"tekst": "Fallout 3", "poprawna": false},
+        {"tekst": "Metro 2033", "poprawna": false},
+        {"tekst": "Dead Space", "poprawna": false}
+      ],
+      "podpowiedz": "Miasto pod wodą, filozofia obiektywizmu, Little Sisters."
+    },
+    {
+      "id": 39,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jak ma na imię główny bohater gry Red Dead Redemption 2?",
+      "odpowiedzi": [
+        {"tekst": "Arthur", "poprawna": true},
+        {"tekst": "John", "poprawna": false},
+        {"tekst": "Dutch", "poprawna": false},
+        {"tekst": "Micah", "poprawna": false}
+      ],
+      "podpowiedz": "Jego nazwisko to Morgan."
+    },
+    {
+      "id": 40,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Która gra studia FromSoftware osadzona jest w Japonii okresu Sengoku?",
+      "odpowiedzi": [
+        {"tekst": "Sekiro: Shadows Die Twice", "poprawna": true},
+        {"tekst": "Bloodborne", "poprawna": false},
+        {"tekst": "Elden Ring", "poprawna": false},
+        {"tekst": "Dark Souls", "poprawna": false}
+      ],
+      "podpowiedz": "Główny bohater to shinobi o imieniu Wilk."
+    },
+    {
+      "id": 41,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która gra opowiada historię włoskiego hydraulika ratującego księżniczkę?",
+      "odpowiedzi": [
+        {"tekst": "Super Mario Bros.", "poprawna": true},
+        {"tekst": "Pac-Man", "poprawna": false},
+        {"tekst": "Sonic the Hedgehog", "poprawna": false},
+        {"tekst": "Zelda", "poprawna": false}
+      ],
+      "podpowiedz": "Postać Mario zadebiutowała w Donkey Kongu."
+    },
+    {
+      "id": 42,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "W której grze sterujesz żółtym stworem jedzącym kropki?",
+      "odpowiedzi": [
+        {"tekst": "Pac-Man", "poprawna": true},
+        {"tekst": "Dig Dug", "poprawna": false},
+        {"tekst": "Space Invaders", "poprawna": false},
+        {"tekst": "Tetris", "poprawna": false}
+      ],
+      "podpowiedz": "Gra z lat 80. z duchami Blinky, Pinky, Inky i Clyde."
+    },
+    {
+      "id": 43,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która gra oferuje system moralnych wyborów z karą lub nagrodą?",
+      "odpowiedzi": [
+        {"tekst": "Mass Effect", "poprawna": true},
+        {"tekst": "Quake", "poprawna": false},
+        {"tekst": "Minecraft", "poprawna": false},
+        {"tekst": "Tekken", "poprawna": false}
+      ],
+      "podpowiedz": "Decyzje wpływają na zakończenie i relacje z postaciami."
+    },
+    {
+      "id": 44,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się złoczyńca w serii Legend of Zelda?",
+      "odpowiedzi": [
+        {"tekst": "Ganon", "poprawna": true},
+        {"tekst": "Bowser", "poprawna": false},
+        {"tekst": "Ridley", "poprawna": false},
+        {"tekst": "Dr. Wily", "poprawna": false}
+      ],
+      "podpowiedz": "Często pojawia się jako potężna, demoniczna forma."
+    },
+    {
+      "id": 45,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "W której grze gracze mogą zarządzać cywilizacją przez tysiące lat?",
+      "odpowiedzi": [
+        {"tekst": "Civilization VI", "poprawna": true},
+        {"tekst": "Age of Empires", "poprawna": false},
+        {"tekst": "SimCity", "poprawna": false},
+        {"tekst": "Anno 1800", "poprawna": false}
+      ],
+      "podpowiedz": "Gra turowa zapoczątkowana przez Sida Meiera."
+    },
+    {
+      "id": 46,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która gra rozgrywa się w świecie science-fiction i zawiera bohatera o imieniu Isaac Clarke?",
+      "odpowiedzi": [
+        {"tekst": "Dead Space", "poprawna": true},
+        {"tekst": "Mass Effect", "poprawna": false},
+        {"tekst": "Crysis", "poprawna": false},
+        {"tekst": "Prey", "poprawna": false}
+      ],
+      "podpowiedz": "Gra z elementami horroru i nekromorfami."
+    },
+    {
+      "id": 47,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się planeta, na której toczy się akcja gry Borderlands?",
+      "odpowiedzi": [
+        {"tekst": "Pandora", "poprawna": true},
+        {"tekst": "Helghan", "poprawna": false},
+        {"tekst": "Reach", "poprawna": false},
+        {"tekst": "Eos", "poprawna": false}
+      ],
+      "podpowiedz": "Planeta pełna łupów, bandytów i Eridium."
+    },
+    {
+      "id": 48,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Która gra pozwala na wcielenie się w detektywa androida o imieniu Connor?",
+      "odpowiedzi": [
+        {"tekst": "Detroit: Become Human", "poprawna": true},
+        {"tekst": "Heavy Rain", "poprawna": false},
+        {"tekst": "L.A. Noire", "poprawna": false},
+        {"tekst": "Beyond: Two Souls", "poprawna": false}
+      ],
+      "podpowiedz": "Gra studia Quantic Dream z wieloma zakończeniami."
+    },
+    {
+      "id": 49,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się alternatywna rzeczywistość w grze Assassin’s Creed, w której gracz przeżywa wspomnienia przodków?",
+      "odpowiedzi": [
+        {"tekst": "Animus", "poprawna": true},
+        {"tekst": "Synapse", "poprawna": false},
+        {"tekst": "Memoria", "poprawna": false},
+        {"tekst": "Desync", "poprawna": false}
+      ],
+      "podpowiedz": "To urządzenie używane przez Abstergo Industries."
+    },
+    {
+      "id": 50,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Który aktor wcielił się w Sam’a w grze Death Stranding?",
+      "odpowiedzi": [
+        {"tekst": "Norman Reedus", "poprawna": true},
+        {"tekst": "Troy Baker", "poprawna": false},
+        {"tekst": "Mads Mikkelsen", "poprawna": false},
+        {"tekst": "Keanu Reeves", "poprawna": false}
+      ],
+      "podpowiedz": "Znany z serialu The Walking Dead."
+    },
+    {
+      "id": 51,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "Która gra znana jest z klocków, które gracz może niszczyć i budować?",
+      "odpowiedzi": [
+        {"tekst": "Minecraft", "poprawna": true},
+        {"tekst": "Fortnite", "poprawna": false},
+        {"tekst": "Roblox", "poprawna": false},
+        {"tekst": "Terraria", "poprawna": false}
+      ],
+      "podpowiedz": "Gra została stworzona przez Markusa Perssona (Notcha)."
+    },
+    {
+      "id": 52,
+      "kategoria": "gry",
+      "difficulty": "Łatwy",
+      "pytanie": "W jakiej grze gracz walczy na wyspie z setką innych graczy, aby zostać ostatnim ocalałym?",
+      "odpowiedzi": [
+        {"tekst": "Fortnite", "poprawna": true},
+        {"tekst": "Overwatch", "poprawna": false},
+        {"tekst": "Valorant", "poprawna": false},
+        {"tekst": "League of Legends", "poprawna": false}
+      ],
+      "podpowiedz": "Gra typu battle royale z trybem budowania struktur."
+    },
+    {
+      "id": 53,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która gra przedstawia wojnę pomiędzy Templariuszami a Asasynami?",
+      "odpowiedzi": [
+        {"tekst": "Assassin's Creed", "poprawna": true},
+        {"tekst": "Dark Souls", "poprawna": false},
+        {"tekst": "The Witcher", "poprawna": false},
+        {"tekst": "God of War", "poprawna": false}
+      ],
+      "podpowiedz": "Seria oparta na eksploracji historycznych epok i parkourze."
+    },
+    {
+      "id": 54,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się główny bohater gry The Witcher?",
+      "odpowiedzi": [
+        {"tekst": "Geralt z Rivii", "poprawna": true},
+        {"tekst": "Ezio Auditore", "poprawna": false},
+        {"tekst": "Arthur Morgan", "poprawna": false},
+        {"tekst": "Kratos", "poprawna": false}
+      ],
+      "podpowiedz": "Biały Wilk, wiedźmin, stworzony przez Andrzeja Sapkowskiego."
+    },
+    {
+      "id": 55,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "W jakiej grze gracz wciela się w cybernetycznego najemnika o imieniu V?",
+      "odpowiedzi": [
+        {"tekst": "Cyberpunk 2077", "poprawna": true},
+        {"tekst": "Watch Dogs: Legion", "poprawna": false},
+        {"tekst": "Deus Ex", "poprawna": false},
+        {"tekst": "Mirror's Edge", "poprawna": false}
+      ],
+      "podpowiedz": "Gra od CD Projekt RED, dziejąca się w Night City."
+    },
+    {
+      "id": 56,
+      "kategoria": "gry",
+      "difficulty": "Normalny",
+      "pytanie": "Która z poniższych gier to symulator życia społecznego z postaciami zwierząt?",
+      "odpowiedzi": [
+        {"tekst": "Animal Crossing", "poprawna": true},
+        {"tekst": "Stardew Valley", "poprawna": false},
+        {"tekst": "Sims 4", "poprawna": false},
+        {"tekst": "Harvest Moon", "poprawna": false}
+      ],
+      "podpowiedz": "W tej grze można sadzić kwiatki, łowić ryby i zaprzyjaźniać się z sąsiadami-zwierzętami."
+    },
+    {
+      "id": 57,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się sztuczna inteligencja sterująca stacją kosmiczną w grze System Shock?",
+      "odpowiedzi": [
+        {"tekst": "SHODAN", "poprawna": true},
+        {"tekst": "GLaDOS", "poprawna": false},
+        {"tekst": "EVA", "poprawna": false},
+        {"tekst": "Athena", "poprawna": false}
+      ],
+      "podpowiedz": "Jej imię to akronim: Sentient Hyper-Optimized Data Access Network."
+    },
+    {
+      "id": 58,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "W jakiej grze pojawia się tajemnicze miasto Rapture pod powierzchnią oceanu?",
+      "odpowiedzi": [
+        {"tekst": "BioShock", "poprawna": true},
+        {"tekst": "Dishonored", "poprawna": false},
+        {"tekst": "Subnautica", "poprawna": false},
+        {"tekst": "Soma", "poprawna": false}
+      ],
+      "podpowiedz": "W grze pojawia się postać Big Daddy i Little Sister."
+    },
+    {
+      "id": 59,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "W jakiej grze poznajemy historię Ellie i Joela podczas apokalipsy?",
+      "odpowiedzi": [
+        {"tekst": "The Last of Us", "poprawna": true},
+        {"tekst": "Days Gone", "poprawna": false},
+        {"tekst": "Dead Rising", "poprawna": false},
+        {"tekst": "Resident Evil 7", "poprawna": false}
+      ],
+      "podpowiedz": "Gra została stworzona przez studio Naughty Dog."
+    },
+    {
+      "id": 60,
+      "kategoria": "gry",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się największe miasto w grze Grand Theft Auto: San Andreas?",
+      "odpowiedzi": [
+        {"tekst": "Los Santos", "poprawna": true},
+        {"tekst": "Vice City", "poprawna": false},
+        {"tekst": "Liberty City", "poprawna": false},
+        {"tekst": "San Fierro", "poprawna": false}
+      ],
+      "podpowiedz": "Miasto inspirowane Los Angeles."
+    },
+    {
+      "id": 11,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się robot z filmu 'WALL-E'?",
+      "odpowiedzi": [
+        {"tekst": "WALL-E", "poprawna": true},
+        {"tekst": "R2-D2", "poprawna": false},
+        {"tekst": "Bender", "poprawna": false},
+        {"tekst": "EVE", "poprawna": false}
+      ],
+      "podpowiedz": "To tytułowy bohater filmu animowanego Pixara."
+    },
+    {
+      "id": 12,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Który aktor zagrał Jacka Sparrowa w 'Piratach z Karaibów'?",
+      "odpowiedzi": [
+        {"tekst": "Johnny Depp", "poprawna": true},
+        {"tekst": "Orlando Bloom", "poprawna": false},
+        {"tekst": "Brad Pitt", "poprawna": false},
+        {"tekst": "Leonardo DiCaprio", "poprawna": false}
+      ],
+      "podpowiedz": "Ten aktor wcielił się także w rolę Edwarda Nożycorękiego."
+    },
+    {
+      "id": 13,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "W jakim uniwersum dzieje się film 'Avengers'?",
+      "odpowiedzi": [
+        {"tekst": "Marvel Cinematic Universe", "poprawna": true},
+        {"tekst": "DC Universe", "poprawna": false},
+        {"tekst": "Star Wars", "poprawna": false},
+        {"tekst": "Matrix", "poprawna": false}
+      ],
+      "podpowiedz": "To to samo uniwersum, co 'Iron Man' i 'Thor'."
+    },
+    {
+      "id": 14,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Kto zagrał główną rolę w filmie 'Matrix'?",
+      "odpowiedzi": [
+        {"tekst": "Keanu Reeves", "poprawna": true},
+        {"tekst": "Tom Cruise", "poprawna": false},
+        {"tekst": "Matt Damon", "poprawna": false},
+        {"tekst": "Will Smith", "poprawna": false}
+      ],
+      "podpowiedz": "Znany też z roli Johna Wicka."
+    },
+    {
+      "id": 15,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się fikcyjne państwo w Afryce z filmu 'Czarna Pantera'?",
+      "odpowiedzi": [
+        {"tekst": "Wakanda", "poprawna": true},
+        {"tekst": "Genosha", "poprawna": false},
+        {"tekst": "Latveria", "poprawna": false},
+        {"tekst": "Zamunda", "poprawna": false}
+      ],
+      "podpowiedz": "To technologicznie zaawansowany kraj ukryty przed światem."
+    },
+    {
+      "id": 16,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Który film zdobył Oscara za najlepszy film w 1994 roku?",
+      "odpowiedzi": [
+        {"tekst": "Forrest Gump", "poprawna": true},
+        {"tekst": "Pulp Fiction", "poprawna": false},
+        {"tekst": "Shawshank Redemption", "poprawna": false},
+        {"tekst": "Braveheart", "poprawna": false}
+      ],
+      "podpowiedz": "Film o mężczyźnie, który przypadkiem uczestniczy w ważnych wydarzeniach XX wieku."
+    },
+    {
+      "id": 17,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się reżyser filmu 'Incepcja'?",
+      "odpowiedzi": [
+        {"tekst": "Christopher Nolan", "poprawna": true},
+        {"tekst": "David Fincher", "poprawna": false},
+        {"tekst": "Ridley Scott", "poprawna": false},
+        {"tekst": "James Cameron", "poprawna": false}
+      ],
+      "podpowiedz": "Ten sam reżyser co trylogii 'Mroczny Rycerz'."
+    },
+    {
+      "id": 18,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak brzmi prawdziwe imię postaci V z filmu 'V jak Vendetta'?",
+      "odpowiedzi": [
+        {"tekst": "Nie zostaje ujawnione", "poprawna": true},
+        {"tekst": "Victor", "poprawna": false},
+        {"tekst": "Vincent", "poprawna": false},
+        {"tekst": "Vlad", "poprawna": false}
+      ],
+      "podpowiedz": "Imię bohatera nie jest znane – ukrywa się za maską."
+    },
+    {
+      "id": 19,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Który z reżyserów stworzył film 'Ojciec chrzestny'?",
+      "odpowiedzi": [
+        {"tekst": "Francis Ford Coppola", "poprawna": true},
+        {"tekst": "Martin Scorsese", "poprawna": false},
+        {"tekst": "Stanley Kubrick", "poprawna": false},
+        {"tekst": "Quentin Tarantino", "poprawna": false}
+      ],
+      "podpowiedz": "To także reżyser 'Czasu Apokalipsy'."
+    },
+    {
+      "id": 20,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jakie zwierzę zabija główną bohaterkę w filmie 'The Revenant'?",
+      "odpowiedzi": [
+        {"tekst": "Niedźwiedź", "poprawna": false},
+        {"tekst": "Żadne – przeżywa atak niedźwiedzia", "poprawna": true},
+        {"tekst": "Wilk", "poprawna": false},
+        {"tekst": "Koń", "poprawna": false}
+      ],
+      "podpowiedz": "To scena brutalna, ale nie kończy się śmiercią bohatera."
+    },
+    {
+      "id": 61,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Kto jest reżyserem trylogii 'Władca Pierścieni'?",
+      "odpowiedzi": [
+        {"tekst": "Peter Jackson", "poprawna": true},
+        {"tekst": "Steven Spielberg", "poprawna": false},
+        {"tekst": "Christopher Nolan", "poprawna": false},
+        {"tekst": "James Cameron", "poprawna": false}
+      ],
+      "podpowiedz": "Reżyser znany z ekranizacji 'King Kong' i 'The Hobbit'."
+    },
+    {
+      "id": 62,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Kto zagrał główną rolę w filmie 'Forrest Gump'?",
+      "odpowiedzi": [
+        {"tekst": "Tom Hanks", "poprawna": true},
+        {"tekst": "Robin Williams", "poprawna": false},
+        {"tekst": "Johnny Depp", "poprawna": false},
+        {"tekst": "Matt Damon", "poprawna": false}
+      ],
+      "podpowiedz": "Aktorka znana z filmów 'Cast Away' i 'The Terminal'."
+    },
+    {
+      "id": 63,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Kto napisał książkę 'Harry Potter i Kamień Filozoficzny'?",
+      "odpowiedzi": [
+        {"tekst": "J.K. Rowling", "poprawna": true},
+        {"tekst": "J.R.R. Tolkien", "poprawna": false},
+        {"tekst": "George R.R. Martin", "poprawna": false},
+        {"tekst": "Philip Pullman", "poprawna": false}
+      ],
+      "podpowiedz": "Brytyjska autorka, której seria książek o czarodzieju stała się światowym fenomenem."
+    },
+    {
+      "id": 64,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "W którym roku został wydany film 'Inception'?",
+      "odpowiedzi": [
+        {"tekst": "2010", "poprawna": true},
+        {"tekst": "2009", "poprawna": false},
+        {"tekst": "2012", "poprawna": false},
+        {"tekst": "2008", "poprawna": false}
+      ],
+      "podpowiedz": "Film opowiada o technologii snów, reżyserem jest Christopher Nolan."
+    },
+    {
+      "id": 65,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Kto zagrał główną rolę w filmie 'Gladiator'?",
+      "odpowiedzi": [
+        {"tekst": "Russell Crowe", "poprawna": true},
+        {"tekst": "Brad Pitt", "poprawna": false},
+        {"tekst": "Tom Cruise", "poprawna": false},
+        {"tekst": "Leonardo DiCaprio", "poprawna": false}
+      ],
+      "podpowiedz": "Aktor, który zdobył Oscara za tę rolę."
+    },
+    {
+      "id": 66,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Który film zdobył Oscara za najlepszy film w 2020 roku?",
+      "odpowiedzi": [
+        {"tekst": "Parasite", "poprawna": true},
+        {"tekst": "1917", "poprawna": false},
+        {"tekst": "Joker", "poprawna": false},
+        {"tekst": "Once Upon a Time in Hollywood", "poprawna": false}
+      ],
+      "podpowiedz": "Film południowokoreański, który zdobył również inne Oscary."
+    },
+    {
+      "id": 67,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się planeta w filmie 'Avatar'?",
+      "odpowiedzi": [
+        {"tekst": "Pandora", "poprawna": true},
+        {"tekst": "Elysium", "poprawna": false},
+        {"tekst": "Zog", "poprawna": false},
+        {"tekst": "Xandar", "poprawna": false}
+      ],
+      "podpowiedz": "To egzotyczna planeta, zamieszkana przez Na'vi."
+    },
+    {
+      "id": 68,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "W którym filmie pojawia się postać o imieniu 'Hannibal Lecter'?",
+      "odpowiedzi": [
+        {"tekst": "Milczenie owiec", "poprawna": true},
+        {"tekst": "Lektor", "poprawna": false},
+        {"tekst": "Zodiak", "poprawna": false},
+        {"tekst": "Prisoners", "poprawna": false}
+      ],
+      "podpowiedz": "Postać grana przez Anthony'ego Hopkinsa, będąca seryjnym mordercą."
+    },
+    {
+      "id": 69,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jaki tytuł nosi pierwszy film z serii 'Piraci z Karaibów'?",
+      "odpowiedzi": [
+        {"tekst": "Pirates of the Caribbean: The Curse of the Black Pearl", "poprawna": true},
+        {"tekst": "Pirates of the Caribbean: Dead Man's Chest", "poprawna": false},
+        {"tekst": "Pirates of the Caribbean: On Stranger Tides", "poprawna": false},
+        {"tekst": "Pirates of the Caribbean: At World's End", "poprawna": false}
+      ],
+      "podpowiedz": "Film opowiada o Jacku Sparrowie i jego przygodach na morzach."
+    },
+    {
+      "id": 70,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się postać, którą gra Ian McKellen w serii 'Władca Pierścieni'?",
+      "odpowiedzi": [
+        {"tekst": "Gandalf", "poprawna": true},
+        {"tekst": "Saruman", "poprawna": false},
+        {"tekst": "Elrond", "poprawna": false},
+        {"tekst": "Faramir", "poprawna": false}
+      ],
+      "podpowiedz": "To czarodziej, który odgrywa kluczową rolę w bitwach przeciwko Sauronowi."
+    },
+    {
+      "id": 71,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Kto grał główną rolę w filmie 'Pulp Fiction'?",
+      "odpowiedzi": [
+        {"tekst": "John Travolta", "poprawna": true},
+        {"tekst": "Bruce Willis", "poprawna": false},
+        {"tekst": "Samuel L. Jackson", "poprawna": false},
+        {"tekst": "Leonardo DiCaprio", "poprawna": false}
+      ],
+      "podpowiedz": "Aktorka znany z roli Vincenta Vegi."
+    },
+    {
+      "id": 72,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się film, który zdobył Oscara za najlepszy film w 1994 roku?",
+      "odpowiedzi": [
+        {"tekst": "Forrest Gump", "poprawna": true},
+        {"tekst": "Schindler's List", "poprawna": false},
+        {"tekst": "The Shawshank Redemption", "poprawna": false},
+        {"tekst": "The Lion King", "poprawna": false}
+      ],
+      "podpowiedz": "Film o mężczyźnie, który mimo trudnych życiowych doświadczeń staje się symbolem nadziei."
+    },
+    {
+      "id": 73,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Jak nazywa się reżyser filmu 'Titanic'?",
+      "odpowiedzi": [
+        {"tekst": "James Cameron", "poprawna": true},
+        {"tekst": "Steven Spielberg", "poprawna": false},
+        {"tekst": "George Lucas", "poprawna": false},
+        {"tekst": "Christopher Nolan", "poprawna": false}
+      ],
+      "podpowiedz": "Reżyser, który również wyreżyserował 'Avatar'."
+    },
+    {
+      "id": 74,
+      "kategoria": "filmy",
+      "difficulty": "Łatwy",
+      "pytanie": "Który film z serii 'Star Wars' rozpoczął sagę?",
+      "odpowiedzi": [
+        {"tekst": "Star Wars: A New Hope", "poprawna": true},
+        {"tekst": "Star Wars: The Phantom Menace", "poprawna": false},
+        {"tekst": "Star Wars: The Force Awakens", "poprawna": false},
+        {"tekst": "Star Wars: Return of the Jedi", "poprawna": false}
+      ],
+      "podpowiedz": "Film, który rozpoczął saga od wydania w 1977 roku."
+    },
+    {
+      "id": 75,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "Jak nazywa się główny bohater w filmie 'Mad Max: Fury Road'?",
+      "odpowiedzi": [
+        {"tekst": "Max Rockatansky", "poprawna": true},
+        {"tekst": "Mad Max", "poprawna": false},
+        {"tekst": "Furiosa", "poprawna": false},
+        {"tekst": "Nux", "poprawna": false}
+      ],
+      "podpowiedz": "Główny bohater, którego gra Tom Hardy."
+    },
+    {
+      "id": 76,
+      "kategoria": "filmy",
+      "difficulty": "Normalny",
+      "pytanie": "W jakim filmie pojawia się postać o imieniu 'Jack Sparrow'?",
+      "odpowiedzi": [
+        {"tekst": "Pirates of the Caribbean", "poprawna": true},
+        {"tekst": "The Goonies", "poprawna": false},
+        {"tekst": "Treasure Island", "poprawna": false},
+        {"tekst": "Indiana Jones", "poprawna": false}
+      ],
+      "podpowiedz": "To pirat, którego gra Johnny Depp."
+    },
+    {
+      "id": 77,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się aktor, który zagrał główną rolę w filmie 'The Revenant'?",
+      "odpowiedzi": [
+        {"tekst": "Leonardo DiCaprio", "poprawna": true},
+        {"tekst": "Tom Hardy", "poprawna": false},
+        {"tekst": "Brad Pitt", "poprawna": false},
+        {"tekst": "Matthew McConaughey", "poprawna": false}
+      ],
+      "podpowiedz": "Aktor, który zdobył Oscara za rolę w tym filmie."
+    },
+    {
+      "id": 78,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Jak nazywa się najnowszy film w serii 'James Bond'?",
+      "odpowiedzi": [
+        {"tekst": "No Time to Die", "poprawna": true},
+        {"tekst": "Spectre", "poprawna": false},
+        {"tekst": "Skyfall", "poprawna": false},
+        {"tekst": "Quantum of Solace", "poprawna": false}
+      ],
+      "podpowiedz": "Film z 2021 roku, który kończy przygodę Daniela Craiga jako agenta 007."
+    },
+    {
+      "id": 79,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "W jakim filmie pojawia się postać o imieniu 'Darth Vader'?",
+      "odpowiedzi": [
+        {"tekst": "Star Wars", "poprawna": true},
+        {"tekst": "Star Trek", "poprawna": false},
+        {"tekst": "The Matrix", "poprawna": false},
+        {"tekst": "Terminator", "poprawna": false}
+      ],
+      "podpowiedz": "Jedna z najbardziej ikonicznych postaci w historii kina."
+    },
+    {
+      "id": 80,
+      "kategoria": "filmy",
+      "difficulty": "Trudny",
+      "pytanie": "Kto reżyserował film 'Blade Runner 2049'?",
+      "odpowiedzi": [
+        {"tekst": "Denis Villeneuve", "poprawna": true},
+        {"tekst": "Ridley Scott", "poprawna": false},
+        {"tekst": "Christopher Nolan", "poprawna": false},
+        {"tekst": "Steven Spielberg", "poprawna": false}
+      ],
+      "podpowiedz": "Reżyser znany z takich filmów jak 'Arrival' i 'Dune'."
+    }
+  ]
+}
+
+
+
+
+
