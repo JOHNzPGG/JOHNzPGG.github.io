@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
     height: 100vh;
+    overflow: hidden   ;
 }
 
 header {
@@ -103,21 +104,37 @@ h1 {
 }
 
 .gry{
-    background-color: red;
-    padding: 50px 20px 20px 20px;
+  width: 300px;
+  height: 500px;
+  background-image: url('backgrounds/bg-gry.jpg');
+  background-repeat: repeat-x;
+  background-size: cover;
+
+  animation: scrollBackground 60s linear infinite;
+
+  filter: grayscale(100%);
+  transition: filter 2s ease;
 }
 
-.gry:hover{
-    animation: overflow_red 3s ease-in-out infinite;
+.gry:hover {
+  filter: grayscale(0%);
 }
 
 .filmy{
-    background-color: blue;
-    padding: 50px 20px 20px 20px;
+  width: 300px;
+  height: 500px;
+  background-image: url('backgrounds/bg-filmy.jpg');
+  background-repeat: repeat-x;
+  background-size: cover;
+
+  animation: scrollBackground 60s linear infinite;
+
+  filter: grayscale(100%);
+  transition: filter 2s ease;
 }
 
-.filmy:hover{
-    animation: overflow_blue 3s ease-in-out infinite;
+.filmy:hover {
+  filter: grayscale(0%);
 }
 
 .linki{
@@ -286,16 +303,13 @@ h1 {
     }
 }
 
-@keyframes overflow_red {
-    0%{
-        background-color: red;
-    }
-    50%{
-        background-color: darkred;
-    }
-    100%{
-        background-color: red;
-    }
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2000px 0;
+  }
 }
 
 
