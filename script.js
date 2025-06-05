@@ -1,3 +1,29 @@
+// darkmode / light mode
+
+const checkbox = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Sprawdź lokalne ustawienie motywu
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    body.classList.add('dark');
+    checkbox.checked = true;
+}
+
+// Obsługa kliknięcia
+checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+        body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+
+//gra
+
 if(localStorage.getItem("difficulty") == null){
     localStorage.setItem("difficulty", "Normalny");
 }

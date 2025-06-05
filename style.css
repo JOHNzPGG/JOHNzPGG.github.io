@@ -5,6 +5,11 @@ body {
     color: #fff;
     height: 100vh;
     overflow: hidden   ;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #121212;
+  color: white;
 }
 
 header {
@@ -97,12 +102,6 @@ h1 {
     border-radius: 2rem;
 }
 
-.kategoria:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-    background-color: #444;
-}
-
 .gry{
   width: 300px;
   height: 500px;
@@ -113,11 +112,13 @@ h1 {
   animation: scrollBackground 60s linear infinite;
 
   filter: grayscale(100%);
-  transition: filter 2s ease;
+  transition: filter 0.5s ease, transform 0.2s ease;
+  transition-timing-function: ease-in-out; 
 }
 
 .gry:hover {
   filter: grayscale(0%);
+  transform: scale(1.08);
 }
 
 .filmy{
@@ -130,11 +131,13 @@ h1 {
   animation: scrollBackground 60s linear infinite;
 
   filter: grayscale(100%);
-  transition: filter 2s ease;
+  transition: filter 0.5s ease, transform 0.2s ease;
+  transition-timing-function: ease-in-out; 
 }
 
 .filmy:hover {
   filter: grayscale(0%);
+  transform: scale(1.08);
 }
 
 .linki{
@@ -279,6 +282,62 @@ h1 {
     padding-top: 32px;
     border-radius: 2rem;
 }
+
+/* Styl przełącznika */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 36px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #444;
+}
+
+input:checked + .slider:before {
+  transform: translateX(34px);
+}
+
+.slider .icon {
+  font-size: 18px;
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 @keyframes spin {
     from {
