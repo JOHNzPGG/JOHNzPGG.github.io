@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let usedQuestions = JSON.parse(localStorage.getItem("usedQuestions")) || [];
     let rewardType = null;
     let currentQuestion = null;
+    let g_answers = [];
+    localStorage.setItem("g_answers", g_answers);
 
     const pointsDisplay = document.querySelector(".points");
     let points = parseInt(localStorage.getItem("points") || "0");
@@ -46,23 +48,25 @@ document.addEventListener("DOMContentLoaded", () => {
         questionsLights.innerHTML = "";
         let id = 1;
 
-        availableQuestions.forEach((question) => {
-            const button = document.createElement("button");
-            button.innerText = `${id}`;
-            button.style.margin = "4px";
-            button.style.height = "60px";
-            button.style.width = "60px";
-            button.style.backgroundColor = "lightgrey";
-            button.style.borderRadius = "1rem";
-            button.style.fontSize = "25px";
-            id++;
+        questions.forEach((question) => {
+            if(question.kategoria === kategoria && question.difficulty === difficultyStorage){
+                const button = document.createElement("button");
+                button.innerText = `${id}`;
+                button.style.margin = "4px";
+                button.style.height = "60px";
+                button.style.width = "60px";
+                button.style.backgroundColor = "lightgrey";
+                button.style.borderRadius = "1rem";
+                button.style.fontSize = "25px";
+                id++;
 
-            // Dodaj np. podgląd pytania po kliknięciu
-            button.addEventListener("click", () => {
-                alert(`ID pytania:\n${question.id}`);
-            });
+                // Dodaj np. podgląd pytania po kliknięciu
+                button.addEventListener("click", () => {
+                    alert(`ID pytania:\n${question.id}`);
+                });
 
-            questionsLights.appendChild(button);
+                questionsLights.appendChild(button);
+            }
         });
 
 
@@ -118,6 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const correctIndex = currentQuestion.odpowiedzi.findIndex(o => o.poprawna);
         let msg = "";
         let rewardPoints = 0;
+
+        g_answers.push(selectedIndex);
+        localStorage.setItem("g_answers", g_answers);
 
         if (selectedIndex === correctIndex) {
             msg = "Poprawna odpowiedź!";
@@ -187,6 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.resetQuiz = function () {
     localStorage.removeItem("usedQuestions");
     localStorage.removeItem("points");
+    localStorage.removeItem("g_answers");
     // Jeśli kiedyś dodasz rewardType do localStorage:
     // localStorage.removeItem("rewardType");
     alert("Gra została zresetowana!");
