@@ -24,6 +24,10 @@ checkbox.addEventListener('change', () => {
 
 //gra
 
+const pointsDisplay = document.querySelector(".points");
+let points = parseInt(localStorage.getItem("points") || "0");
+pointsDisplay.innerHTML = "Punkty: " + points;
+
 if(localStorage.getItem("difficulty") == null){
     localStorage.setItem("difficulty", "Normalny");
 }
@@ -83,18 +87,62 @@ function loadQuestions() {
             if (!response.ok) throw new Error(`Błąd wczytywania JSON: ${response.status}`);
             return response.json();
         })
-        .then(data => {
-            const container = document.getElementById("questions-container");
-            data.pytania.forEach((pytanie, index) => {
-                let questionElement = document.createElement("div");
-                questionElement.className = "question";
-                // questionElement.innerHTML = `<strong>Pytanie ${index + 1}:</strong> ${pytanie.pytanie}`;
+.then(data => {
+    const container = document.getElementById("questions-container");
 
-                questionElement.innerHTML = `<strong>Pytanie ${index + 1}, Kategoria: ${pytanie.kategoria}, Poziom: ${pytanie.difficulty}</br></br></strong> Ukryte pytanie`;
-                container.appendChild(questionElement);
-            });
-        })
-        .catch(error => console.error("Błąd:", error));
+    const u_odp = JSON.parse(localStorage.getItem("u_odp") || "[]");
+
+    data.pytania.forEach((pytanie, index) => {
+        const questionElement = document.createElement("div");
+        questionElement.className = "question";
+
+        // czy użytkownik odpowiedział na to pytanie
+        const odp = u_odp.find(entry => entry.id === pytanie.id);
+
+    if (odp) {
+        const correctAnswerText = pytanie.odpowiedzi.find(odpowiedz => odpowiedz.poprawna).tekst;
+        const userAnswerText = odp.answer;
+
+        let buttonsHTML = "";
+
+        for (let i = 0; i < 4; i++) {
+            const ans = pytanie.odpowiedzi[i].tekst;
+            let style = "";
+
+            if (ans === userAnswerText) {
+                style = odp.isCorrect
+                    ? "background-color: green; color: white;"
+                    : "background-color: red; color: white;";
+            } else if (!odp.isCorrect && ans === correctAnswerText) {
+                style = "background-color: green; color: white;";
+            }
+
+            buttonsHTML += `<button style="margin: 4px; padding: 10px; border-radius: 0.5rem; ${style}">${ans}</button>`;
+        }
+
+        questionElement.innerHTML = `
+            <strong>Pytanie ${index}</strong><br>
+            <strong>Kategoria:</strong> ${pytanie.kategoria}<br>
+            <strong>Poziom:</strong> ${pytanie.difficulty}<br><br>
+            <strong>${pytanie.pytanie}</strong><br><br>
+            <em>Odpowiedzi:</em><br>
+            ${buttonsHTML}
+        `;
+        container.appendChild(questionElement);
+    }
+
+    });
+})
+.catch(error => console.error("Błąd:", error));
+
 }
+
+window.resetQuiz = function () {
+    localStorage.removeItem("usedQuestions");
+    localStorage.removeItem("points");
+    localStorage.removeItem("u_odp");
+    alert("Gra została zresetowana!");
+    location.reload();
+};
 
 document.addEventListener("DOMContentLoaded", loadQuestions);

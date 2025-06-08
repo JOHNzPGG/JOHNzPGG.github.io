@@ -6,6 +6,11 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo.jpg">
+    <style>
+        body {
+        overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +19,7 @@
             <a href="pytania.html" class="nav">Pytania</a>
             <span onclick='changeDifficultyLevel()' class="difficulty-level-button nav">Aktualny poziom trudności: <span id="difficulty"></span></span>
         </nav>
+        <span onclick='resetQuiz()' class="reset-button">Zresetuj postęp</span>
         <div class="theme">
         <label class="switch">
             <input type="checkbox" id="theme-toggle">

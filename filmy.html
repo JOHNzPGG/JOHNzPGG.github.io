@@ -6,64 +6,81 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo.jpg">
+    <style>
+        body {
+        overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="pytania.html">Pytania</a>
-            <span onclick='changeDifficultyLevel()' class="difficulty-level-button">Aktualny poziom trudności: <span id="difficulty">Normalny</span></span>
-            <span onclick='resetQuiz()' class="reset-button">Zresetuj grę</span>
+            <a href="index.html" class="nav">Strona główna</a>
+            <a href="pytania.html" class="nav">Pytania</a>
+            <span onclick='changeDifficultyLevel()' class="difficulty-level-button nav">Aktualny poziom trudności: <span id="difficulty"></span></span>
         </nav>
+        <span onclick='resetQuiz()' class="reset-button">Zresetuj postęp</span>
+        <div class="theme">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </span>
+            </label>
+        </div>
         <div class="points">Punkty: 0</div>
     </header>
     <div class="content">
         <div id="up">
-            </br>
-            <h1>Kategoria: filmy</h1>
+            <h1>Kategoria pytań: filmy</h1>
         </div>
         <div id="left">
-            <div id="blue">
+            <div id="blue" class="left">
                 Gracz dostaje podpowiedź dotyczącą pytania.
             </div>
-            <br><br>
-            <div id="yellow">
+            <div id="yellow" class="left">
                 Koło ratunkowe 50/50 - wyrzucone zostają dwie niepoprawne odpowiedzi.
             </div>
-            <br><br>
-            <div id="green">
+            <div id="green" class="left">
                 Punkty x2 po udzieleniu poprawnej odpowiedzi.
             </div>
-            <br><br>
-            <div id="red">
+            <div id="red" class="left">
                 Gracz dostaje -5 pkt w przypadku udzielenia niepoprawnej odpowiedzi.
             </div>
-            <br><br>
-            <div id="bonus">
-                Zakręć kołem by wylosować bonus!
+            <div id="bonus" class="left">
+                <h2>Zakręć kołem by wylosować bonus!</h2>
             </div>
         </div>
         <div id="middle">
-            </br>
             <h1>Koło Nagród</h1>
             <div class="wheel-container" onclick="spin()">
                 <div class="arrow"></div>
                 <div class="wheel" id="wheel"></div>
             </div>
-            <h1>Pytanie</h1>
+            <!-- <h1>Pytanie</h1>
             <div class="pytania-odpowiedzi">
                 <span id="question"></span>
             </div>
             <h1>Odpowiedzi</h1>
             <div class="pytania-odpowiedzi">
                 <span id="answers"></span>
-            </div>
+            </div> -->
         </div>
-        <div id="right">
-            
+        <div id="right"></div>
+    </div>
+
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-bonus"></div>
+            <h3 id="modal-hint"></h3>
+            <h2 id="modal-question"></h2>
+            <div id="modal-answers"></div>
         </div>
     </div>
+
 </body>
 <script src="script.js"></script>
-<script src="filmy-script.js"></script>
+<script src="gry-script.js"></script>
 </html>

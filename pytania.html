@@ -10,13 +10,23 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="pytania.html">Pytania</a>
-            <span onclick='changeDifficultyLevel()' class="difficulty-level-button">Aktualny poziom trudności: <span id="difficulty">Normalny</span></span>
+            <a href="index.html" class="nav">Strona główna</a>
+            <a href="pytania.html" class="nav">Pytania</a>
+            <span onclick='changeDifficultyLevel()' class="difficulty-level-button nav">Aktualny poziom trudności: <span id="difficulty"></span></span>
         </nav>
+        <span onclick='resetQuiz()' class="reset-button">Zresetuj postęp</span>
+        <div class="theme">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </span>
+            </label>
+        </div>
         <div class="points">Punkty: 0</div>
     </header>
-    <div class="category-container-levels">
+        <div class="category-container-levels">
         <div class="main-text">
             <h2>Spis wszystkim poziomów</h2>
             Jeżeli odpowiedź na pytanie została już udzielona to będzie można podejrzeć pytanie wraz odpowiedziemi.

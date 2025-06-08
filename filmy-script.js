@@ -5,10 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    const rewards = new Map();
+    rewards.set("blue", "Gracz dostaje podpowiedź dotyczącą pytania.")
+    rewards.set("yellow", "Koło ratunkowe 50/50 - wyrzucone zostają dwie niepoprawne odpowiedzi.")
+    rewards.set("green", "Punkty x2 po udzieleniu poprawnej odpowiedzi.")
+    rewards.set("red", "Gracz dostaje -5 pkt w przypadku udzielenia niepoprawnej odpowiedzi.")
+
     const difficultyStorage = localStorage.getItem("difficulty");
     let usedQuestions = JSON.parse(localStorage.getItem("usedQuestions")) || [];
     let rewardType = null;
     let currentQuestion = null;
+    let u_odp = JSON.parse(localStorage.getItem("u_odp")) || [];
 
     const pointsDisplay = document.querySelector(".points");
     let points = parseInt(localStorage.getItem("points") || "0");
@@ -46,23 +53,35 @@ document.addEventListener("DOMContentLoaded", () => {
         questionsLights.innerHTML = "";
         let id = 1;
 
-        availableQuestions.forEach((question) => {
-            const button = document.createElement("button");
-            button.innerText = `${id}`;
-            button.style.margin = "4px";
-            button.style.height = "60px";
-            button.style.width = "60px";
-            button.style.backgroundColor = "lightgrey";
-            button.style.borderRadius = "1rem";
-            button.style.fontSize = "25px";
-            id++;
+        questions.forEach((question) => {
+            if(question.kategoria === kategoria && question.difficulty === difficultyStorage){
+                const button = document.createElement("button");
+                button.innerText = `${id}`;
+                button.style.margin = "4px";
+                button.style.height = "60px";
+                button.style.width = "60px";
+                const odp = u_odp.find(entry => entry.id === question.id);
+                if (odp) {
+                    if (odp.isCorrect === true) {
+                        button.style.backgroundColor = "green";
+                    } else if (odp.isCorrect === false) {
+                        button.style.backgroundColor = "red";
+                    }
+                }
+                else {
+                    button.style.backgroundColor = "lightgrey";
+                }
+                button.style.borderRadius = "1rem";
+                button.style.fontSize = "25px";
+                id++;
 
-            // Dodaj np. podgląd pytania po kliknięciu
-            button.addEventListener("click", () => {
-                alert(`ID pytania:\n${question.id}`);
-            });
+                // Dodaj np. podgląd pytania po kliknięciu
+                button.addEventListener("click", () => {
+                    alert(`ID pytania:\n${question.id}`);
+                });
 
-            questionsLights.appendChild(button);
+                questionsLights.appendChild(button);
+            }
         });
 
 
@@ -76,68 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showQuestion(question) {
-        const questionElement = document.getElementById("question");
         const answersContainer = document.getElementById("answers");
-        questionElement.innerText = question.pytanie;
-        questionElement.style.fontSize = "Larger";
-        answersContainer.innerHTML = "";
-
-        question.odpowiedzi.forEach((answer, index) => {
-            const button = document.createElement("button");
-            button.innerText = answer.tekst;
-            button.style.fontSize = "Larger";
-            button.style.backgroundColor = "lightgrey";
-            button.style.borderRadius = "1rem";
-            button.style.fontSize = "25px";
-            button.onclick = () => checkAnswer(index, button);
-            answersContainer.appendChild(button);
-        });
-
-        // 50/50
-        if (rewardType === "yellow") {
-            const wrongAnswers = question.odpowiedzi
-                .map((o, i) => ({ ...o, index: i }))
-                .filter(o => !o.poprawna);
-            const toDisable = shuffle(wrongAnswers).slice(0, 2);
-            toDisable.forEach(o => {
-                const btn = answersContainer.children[o.index];
-                btn.disabled = true;
-                btn.style.opacity = 0.5;
-            });
-        }
-
-        // podpowiedź
-        if (rewardType === "blue") {
-            console.log("hint")
-            const hint = question.podpowiedz;
-            alert("PODPOWIEDŹ: " + hint);
-        }
-    }
-
-    function checkAnswer(selectedIndex, button) {
-        const correctIndex = currentQuestion.odpowiedzi.findIndex(o => o.poprawna);
-        let msg = "";
-        let rewardPoints = 0;
-
-        if (selectedIndex === correctIndex) {
-            msg = "Poprawna odpowiedź!";
-            if (rewardType === "green") rewardPoints = 20;
-            else if (rewardType === "red") rewardPoints = 10;
-            else rewardPoints = 10;
-        } else {
-            msg = "Błędna odpowiedź!";
-            if (rewardType === "red") rewardPoints = -5;
-            else rewardPoints = 0;
-        }
-
-        points += rewardPoints;
-        localStorage.setItem("points", points);
-        updatePointsDisplay();
-        alert(`${msg} (${rewardPoints >= 0 ? "+" : ""}${rewardPoints} pkt)`);
-
-        usedQuestions.push(currentQuestion.id);
-        localStorage.setItem("usedQuestions", JSON.stringify(usedQuestions));
-        location.reload();
+        showQuestionInModal(question, rewardType, rewards);
     }
 
     // Funkcja losowania z koła
@@ -148,7 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
         else{
             const wheel = document.querySelector(".wheel");
             wheel.removeAttribute("onclick");
-            const randomDeg = Math.floor(Math.random() * 359);
+            // const randomDeg = Math.floor(Math.random() * 359);
+            const randomDeg = 200;
             const SpinAndranodmDeg = 360 * 5 + randomDeg; // minimum 5 obrotów
             wheel.style.transition = "transform 4s ease-out";
             wheel.style.transform = `rotate(${SpinAndranodmDeg}deg)`;
@@ -176,19 +136,116 @@ document.addEventListener("DOMContentLoaded", () => {
         showQuestion(currentQuestion);
     }
 
-    // Losowa kolejność pomocniczo do 50/50
-    function shuffle(array) {
-        return array.sort(() => Math.random() - 0.5);
+
+function checkAnswer(idx, question, rewardType, isCorrect) {
+    let points = parseInt(localStorage.getItem("points") || "0");
+    let rewardPoints = 0;
+
+    if (isCorrect) {
+        if (rewardType === "green") rewardPoints = 20;
+        else if (rewardType === "red") rewardPoints = 10;
+        else rewardPoints = 10;
+    } else {
+        if (rewardType === "red") rewardPoints = -5;
+        else rewardPoints = 0;
     }
+
+    u_odp.push({
+        difficulty: question.difficulty,
+        kategoria: question.kategoria,
+        id: question.id,
+        answer: question.odpowiedzi[idx].tekst,
+        isCorrect: isCorrect
+    });
+    localStorage.setItem("u_odp", JSON.stringify(u_odp));
+
+    points += rewardPoints;
+    localStorage.setItem("points", points);
+    updatePointsDisplay();
+    usedQuestions.push(question.id);
+    localStorage.setItem("usedQuestions", JSON.stringify(usedQuestions));
+}
+
+
+//dodatkowe okno
+
+function show_modal(){
+    modal.style.display = 'flex';
+}
+
+const modal = document.getElementById('question-modal');
+const closeModal = modal.querySelector('.close');
+closeModal.onclick = () => modal.style.display = 'none';
+
+function showQuestionInModal(question, rewardType, rewards) {
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
+  const rewardText = rewards.get(rewardType);
+  if(rewardType === "blue"){
+    document.getElementById('modal-hint').innerText = "Podpowiedz do pytania:\n" + question.podpowiedz;
+  }
+  document.getElementById('modal-bonus').innerText = `Wylosowany bonus: \n ${rewardText}`;
+  document.getElementById('modal-question').innerText = question.pytanie;
+  const answersDiv = document.getElementById('modal-answers');
+  answersDiv.innerHTML = '';
+
+  if (rewardType === "yellow") {
+  const wrongAnswers = question.odpowiedzi
+    .map((o, i) => ({ ...o, index: i }))
+    .filter(o => !o.poprawna);
+    var toDisable = shuffle(wrongAnswers).slice(0, 2);
+    console.log(toDisable);
+  }
+
+  question.odpowiedzi.forEach((ans, idx) => {
+    const btn = document.createElement('button');
+    btn.innerText = ans.tekst;
+    if (rewardType === "yellow" && toDisable[0].tekst === ans.tekst || toDisable[1].tekst === ans.tekst) {
+        console.log(toDisable[0].tekst);
+        console.log(toDisable[1].tekst);
+        console.log(ans.tekst);
+        btn.style.display
+        btn.style.cursor = "not-allowed";
+        btn.disabled = true;
+    }
+
+btn.onclick = () => {
+    const poprawnosc_odp = question.odpowiedzi[idx].poprawna;
+    handleAnswer(idx, question, btn, rewardType);
+    checkAnswer(idx, question, rewardType, poprawnosc_odp);
+};
+
+
+    answersDiv.appendChild(btn);
+  });
+
+  modal.style.display = 'flex';
+}
+
+function handleAnswer(selectedIdx, question, clickedButton, rewardType) {
+  const correctIdx = question.odpowiedzi.findIndex(a => a.poprawna);
+  const buttons = document.getElementById('modal-answers').children;
+
+  if (selectedIdx === correctIdx) {
+    clickedButton.classList.add('correct');
+  } else {
+    clickedButton.classList.add('wrong');
+    buttons[correctIdx].classList.add('correct');
+  }
+
+  Array.from(buttons).forEach((btn) => {
+    btn.disabled = true;
+    btn.classList.add("disabled");
+  });
+
+
+  setTimeout(() => {
+    modal.style.display = 'none';
+    location.reload();
+  }, 4000);
+}
+
 
     loadQuestions();
 });
-
-    window.resetQuiz = function () {
-    localStorage.removeItem("usedQuestions");
-    localStorage.removeItem("points");
-    // Jeśli kiedyś dodasz rewardType do localStorage:
-    // localStorage.removeItem("rewardType");
-    alert("Gra została zresetowana!");
-    location.reload();
-};
