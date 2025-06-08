@@ -168,10 +168,6 @@ function checkAnswer(idx, question, rewardType, isCorrect) {
 
 //dodatkowe okno
 
-function show_modal(){
-    modal.style.display = 'flex';
-}
-
 const modal = document.getElementById('question-modal');
 const closeModal = modal.querySelector('.close');
 closeModal.onclick = () => modal.style.display = 'none';
@@ -197,27 +193,28 @@ function showQuestionInModal(question, rewardType, rewards) {
     console.log(toDisable);
   }
 
-  question.odpowiedzi.forEach((ans, idx) => {
-    const btn = document.createElement('button');
-    btn.innerText = ans.tekst;
-    if (rewardType === "yellow" && toDisable[0].tekst === ans.tekst || toDisable[1].tekst === ans.tekst) {
-        console.log(toDisable[0].tekst);
-        console.log(toDisable[1].tekst);
-        console.log(ans.tekst);
-        btn.style.display
-        btn.style.cursor = "not-allowed";
-        btn.disabled = true;
+question.odpowiedzi.forEach((ans, idx) => {
+  const btn = document.createElement('button');
+  btn.innerText = ans.tekst;
+  
+  if (rewardType === "yellow") {
+    const disable0 = toDisable[0] && toDisable[0].tekst === ans.tekst;
+    const disable1 = toDisable[1] && toDisable[1].tekst === ans.tekst;
+    if (disable0 || disable1) {
+      btn.style.cursor = "not-allowed";
+      btn.disabled = true;
     }
-
-btn.onclick = () => {
+  }
+  
+  btn.onclick = () => {
     const poprawnosc_odp = question.odpowiedzi[idx].poprawna;
     handleAnswer(idx, question, btn, rewardType);
     checkAnswer(idx, question, rewardType, poprawnosc_odp);
-};
+  };
 
+  answersDiv.appendChild(btn);
+});
 
-    answersDiv.appendChild(btn);
-  });
 
   modal.style.display = 'flex';
 }
