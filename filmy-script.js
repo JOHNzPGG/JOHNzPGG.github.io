@@ -107,8 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         else{
             const wheel = document.querySelector(".wheel");
             wheel.removeAttribute("onclick");
-            // const randomDeg = Math.floor(Math.random() * 359);
-            const randomDeg = 200;
+            const randomDeg = Math.floor(Math.random() * 359);
             const SpinAndranodmDeg = 360 * 5 + randomDeg; // minimum 5 obrotów
             wheel.style.transition = "transform 4s ease-out";
             wheel.style.transform = `rotate(${SpinAndranodmDeg}deg)`;
