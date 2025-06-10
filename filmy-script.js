@@ -239,7 +239,7 @@ function handleAnswer(selectedIdx, question, clickedButton, rewardType) {
   setTimeout(() => {
     modal.style.display = 'none';
     location.reload();
-  }, 4000);
+  }, 2500);
 }
 
 

@@ -208,10 +208,11 @@ input:checked + .slider:before {
 }
 
 .arrow {
+  rotate: 180deg;
   position: absolute;
   top: -45px; 
   left: 50%; 
-  transform: translateX(-50%);
+  transform: translateX(+40%);
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
@@ -348,7 +349,7 @@ input:checked + .slider:before {
 
 #right {
   float: left;
-  min-width: 150px;
+  min-width: 120px;
   width: 12%;
   padding: 0 90px;
   height: 90%;
@@ -429,6 +430,18 @@ button.disabled {
 body.dark .modal-content {
   background: #333;
   color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #27272770;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* ANIMACJE */
