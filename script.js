@@ -117,15 +117,14 @@ function loadQuestions() {
                 style = "background-color: green; color: white;";
             }
 
-            buttonsHTML += `<button style="margin: 4px; padding: 10px; border-radius: 0.5rem; ${style}">${ans}</button>`;
+            buttonsHTML += `<button style="font-size: 18px; margin: 4px; padding: 15px; border-radius: 0.5rem; ${style}">${ans}</button>`;
         }
 
         questionElement.innerHTML = `
-            <strong>Pytanie ${index}</strong><br>
-            <strong>Kategoria:</strong> ${pytanie.kategoria}<br>
-            <strong>Poziom:</strong> ${pytanie.difficulty}<br><br>
-            <strong>${pytanie.pytanie}</strong><br><br>
-            <em>Odpowiedzi:</em><br>
+            <strong style="font-size:20px; margin-top: 100px;">Pytanie ${index}</strong><br>
+            <strong style="font-size:20px;">Kategoria:</strong> ${pytanie.kategoria}<br>
+            <strong style="font-size:20px;">Poziom:</strong> ${pytanie.difficulty}<br><br>
+            <strong style="font-size:24px; padding:10px;  border-radius: 1rem; background-color: rgb(61, 61, 61);">${pytanie.pytanie}</strong><br><br>
             ${buttonsHTML}
         `;
         container.appendChild(questionElement);

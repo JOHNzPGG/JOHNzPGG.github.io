@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo.jpg">
-    <style>
-        body {
-        overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz – Strona główna</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <style> body { overflow: hidden; } </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="nav">Strona główna</a>
-            <a href="pytania.html" class="nav">Pytania</a>
-            <span onclick='changeDifficultyLevel()' class="difficulty-level-button nav">Aktualny poziom trudności: <span id="difficulty"></span></span>
-        </nav>
-        <span onclick='resetQuiz()' class="reset-button">Zresetuj postęp</span>
-        <div class="theme">
-        <label class="switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider">
-                <span class="icon sun">☀️</span>
-                <span class="icon moon">🌙</span>
-            </span>
-            </label>
-        </div>
-        <div class="points">Punkty: 0</div>
-    </header>
-    <div class="category-container">
-        <div class="main-text">
-            <h1>Witaj na stronie z quizami o filmach i grach!</h1>
-            <h2>Wybierz kategorię pytań:</h2>
-        </div>
-        <div class="content-main">
-            <a href="gry.html" class="linki">
-                <div class="kategoria gry">
-                </div>
-            </a>
-            <a href="filmy.html" class="linki">
-                <div class="kategoria filmy">
-                </div>
-            </a>
-        </div>
+  <nav class="main-nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav">Strona główna</a>
+      <a href="pytania.html" class="nav">Pytania</a>
+      <span onclick="changeDifficultyLevel()" class="difficulty-level-button nav">
+        Aktualny poziom trudności: <span id="difficulty"></span>
+      </span>
     </div>
+    <div class="nav-right">
+      <span onclick="resetQuiz()" class="reset-button">Zresetuj postęp</span>
+      <div class="theme">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+      </div>
+      <div class="points">Punkty: <span id="points-count">0</span></div>
+    </div>
+  </nav>
+
+  <main class="category-container">
+    <div class="main-text">
+      <h1>Witaj na stronie z quizami o filmach i grach!</h1>
+      <h2>Wybierz kategorię pytań:</h2>
+    </div>
+    <div class="content-main">
+      <a href="gry.html" class="linki">
+        <div class="kategoria gry"></div>
+      </a>
+      <a href="filmy.html" class="linki">
+        <div class="kategoria filmy"></div>
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
