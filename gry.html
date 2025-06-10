@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz</title>
+  <title>Quiz - gry</title>
   <link rel="icon" type="image/png" href="logo.jpg">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -16,7 +16,7 @@
       <a href="index.html" class="nav">Strona główna</a>
       <a href="pytania.html" class="nav">Pytania</a>
       <span onclick="changeDifficultyLevel()" class="difficulty-level-button nav">
-        Aktualny poziom trudności: <span id="difficulty"></span>
+        Aktualny poziom trudności: <span id="difficulty">Średni</span>
       </span>
     </div>
     <div class="nav-right">
@@ -74,6 +74,27 @@
   </div>
 
   <script src="script.js"></script>
-  <script src="gry-script.js"></script>
+  <script src="filmy-script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+        themeToggle.checked = true;
+      }
+      
+      themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

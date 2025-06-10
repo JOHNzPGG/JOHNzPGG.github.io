@@ -14,7 +14,7 @@
       <a href="index.html" class="nav">Strona główna</a>
       <a href="pytania.html" class="nav">Pytania</a>
       <span onclick="changeDifficultyLevel()" class="difficulty-level-button nav">
-        Aktualny poziom trudności: <span id="difficulty"></span>
+        Aktualny poziom trudności: <span id="difficulty">Średni</span>
       </span>
     </div>
     <div class="nav-right">
@@ -39,14 +39,44 @@
     </div>
     <div class="content-main">
       <a href="gry.html" class="linki">
-        <div class="kategoria gry"></div>
+        <div class="kategoria gry">
+          <div class="kafelek-gry">
+            <h3>Gry</h3>
+          </div>
+        </div>
       </a>
       <a href="filmy.html" class="linki">
-        <div class="kategoria filmy"></div>
+        <div class="kategoria filmy">
+          <div class="kafelek-filmy">
+            <h3>Filmy</h3>
+          </div>
+        </div>
       </a>
     </div>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    // Prosty skrypt do obsługi motywu
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+        themeToggle.checked = true;
+      }
+      
+      themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
