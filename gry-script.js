@@ -219,14 +219,19 @@ question.odpowiedzi.forEach((ans, idx) => {
   modal.style.display = 'flex';
 }
 
+var wrong_sound = document.getElementById("Audio-wrong"); 
+var correct_sound = document.getElementById("Audio-correct"); 
+
 function handleAnswer(selectedIdx, question, clickedButton, rewardType) {
   const correctIdx = question.odpowiedzi.findIndex(a => a.poprawna);
   const buttons = document.getElementById('modal-answers').children;
 
   if (selectedIdx === correctIdx) {
     clickedButton.classList.add('correct');
+    correct_sound.play();
   } else {
     clickedButton.classList.add('wrong');
+    wrong_sound.play();
     buttons[correctIdx].classList.add('correct');
   }
 
